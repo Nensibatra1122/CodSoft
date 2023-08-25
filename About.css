@@ -1,0 +1,107 @@
+body{
+    background-color:rgb(49, 44, 42);
+    margin-left: 100px;
+
+}
+h1{
+    color: #ededed;
+    margin-bottom:10px ;
+    margin-top: 12px;
+    font-size:100px;
+}
+h4{
+    color: #ededed;
+    margin-top: none;
+    margin-bottom: 100px;
+}  
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    height: 100vh; /* Adjust to your preferred height */
+    box-sizing: border-box;
+  }
+
+  .text {
+    flex: 1;
+    padding-right: 20px; /* Add some spacing between text and image */
+  }
+
+  .image {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    position: absolute;
+    right: 20px; /* Adjust the right distance as needed */
+    transform: translateY(-97%);
+    width: 40%; /* Adjust the width as needed */
+    max-width: 300px; /* Set a maximum width to maintain image quality */
+    height: auto;
+   /* Rotate the image 180 degrees */
+  }
+  .view-button {
+    margin-bottom: 100px;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    background-color: #00abf0;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .view-button:last-child {
+    margin-right: 0; /* Remove margin from the last button */
+  }
+  
+  .view-button:hover {
+    background-color: #081b29;
+  }
+  .home-sci {
+   
+	position: fixed; /* Use fixed positioning */
+	bottom: 0; /* Position at the bottom */
+	left: 35px; /* Position at the left */
+  }
+  
+  .home-sci a {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	background: transparent;
+	border: 2px solid #00abf0;
+	border-radius: 50%;
+	font-size: 20px;
+	color: #00abf0;
+	text-decoration: none;
+	overflow: hidden;
+	transition: 0.5s;
+  }
+  .home-sci a::before {
+	content: ' ';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 1px;
+	height: 100%;
+	background: #00abf0;
+	z-index: -1;
+	transition: 0.5s;
+  }
+  
+  .home-sci a:hover::before {
+	width: 100%;
+  }
+  .footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color:#00abf0;
+}
